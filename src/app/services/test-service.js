@@ -1,4 +1,4 @@
-import ApiHelper from 'utils/helpers/api-helper';
+import ApiHelper from 'services/api-helper';
 
 const resourceUrl = 'Test';
 class TestService {

@@ -10,7 +10,7 @@ export default function testReducer(state = initialState, action) {
         return {
             ...state,
             test: action.test
-        }
+        };
     }
     default:
         return state;

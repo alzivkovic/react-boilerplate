@@ -87,7 +87,7 @@ var config = {
             ]
         }),
         new HtmlWebpackPlugin({
-            favicon: 'src/favicon.ico',
+            //favicon: 'src/favicon.ico',
             template: './src/index.ejs'
         }),
         new ExtractTextPlugin('bundle.css', {

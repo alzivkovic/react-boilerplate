@@ -3,7 +3,7 @@ import createSagaMiddleware from 'redux-saga';
 /* Sagas */
 import testSaga from './pages/test/test-saga';
 /* Reducers */
-import testReducer from './pages/user-pages/test/test-reducer';
+import testReducer from './pages/test/test-reducer';
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -11,9 +11,7 @@ const reducer = combineReducers({
     testReducer
 });
 
-const appReducer = (state, action) => {
-    return reducer(state, action);
-};
+const appReducer = (state, action) => reducer(state, action);
 
 const enhancer = applyMiddleware(sagaMiddleware);
 

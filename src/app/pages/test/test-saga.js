@@ -1,5 +1,5 @@
 import { takeEvery } from 'redux-saga';
-import { all, put, select } from 'redux-saga/effects';
+import { put } from 'redux-saga/effects';
 /* actions */
 import { ActionTypes } from './test-actions';
 /* services */

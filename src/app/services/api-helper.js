@@ -11,15 +11,13 @@ const getAccessToken = () => {
     localStorage.getItem('access_token');
 };
 
-const getHeaders = () => {
-    return Object.assign({}, initialHeaders, {
-        Authorization: `Bearer ${getAccessToken()}`
-    });
-};
+const getHeaders = () => Object.assign({}, initialHeaders, {
+    Authorization: `Bearer ${getAccessToken()}`
+});
 
 class ApiHelper {
 
-    static get(resourceUrl, params = {}) {
+    static get(resourceUrl) {
         const url = `${apiConfig.baseUrl}/${resourceUrl}`;
         return axios({
             method: 'get',

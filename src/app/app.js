@@ -4,15 +4,15 @@ import { Provider } from 'react-redux';
 import { IndexRoute, Route, Router, Redirect, hashHistory } from 'react-router';
 /* store */
 import { getStore, startSagas } from './app-store';
-/* axios interceptors */
-import './interceptors';
 /* pages */
-import TestPage from './pages/user-pages/test/test';
+import TestPage from './pages/test/test';
 
 /* Route setup */
 const routes = (
     <Router history={hashHistory} >
-        <Route path="test" component={TestPage} />
+        <IndexRoute path="test" component={TestPage} />
+        <Route path="test" components={TestPage} />
+        <Redirect from="*" to="test" />
     </Router>
 );
 
