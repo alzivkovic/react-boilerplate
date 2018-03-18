@@ -1,0 +1,21 @@
+{
+    "presets": ["env", "react", "stage-3"],
+    "env": {
+        "production": {
+            "plugins": [
+                "transform-react-constant-elements",
+                "transform-react-inline-elements",
+                "transform-class-properties",
+                "transform-object-rest-spread"
+            ]
+        },
+        "development": {
+            "plugins": [
+                "transform-class-properties",
+                "transform-object-rest-spread",
+                "transform-react-constant-elements",
+                "transform-react-inline-elements"
+            ]
+        }
+    }
+}

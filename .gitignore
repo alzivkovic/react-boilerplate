@@ -1,0 +1,12 @@
+# Logs
+npm-debug.log*
+
+# Compiled code
+build
+build.zip
+
+# Dependency directory
+node_modules
+
+# Webstorm default config
+.idea
